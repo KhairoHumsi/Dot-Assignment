@@ -3,7 +3,6 @@ package com.khairo.dotassignment.data.impl
 import android.content.Context
 import com.khairo.dotassignment.R
 import com.khairo.dotassignment.data.models.contributors.Contributors
-import com.khairo.dotassignment.data.models.repo.Repo
 import com.khairo.dotassignment.data.network.EndPointInterface
 import com.khairo.dotassignment.data.repositories.repoDetails.RepoDetailsRepository
 import com.khairo.utils.ResponseHelper

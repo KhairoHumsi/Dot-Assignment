@@ -2,7 +2,6 @@ package com.khairo.dotassignment.data.models.contributors
 
 import com.google.gson.annotations.SerializedName
 
-
 data class Contributors(
     @SerializedName("id")
     var id: Int,

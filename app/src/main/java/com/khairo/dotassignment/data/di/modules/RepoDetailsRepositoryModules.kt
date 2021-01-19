@@ -18,6 +18,10 @@ class RepoDetailsRepositoryModules {
 
     @Singleton
     @Provides
-    fun providesRepository(context: Context, api: EndPointInterface, responseHelper: ResponseHelper<List<Contributors>>): RepoDetailsRepository =
+    fun providesRepository(
+        context: Context,
+        api: EndPointInterface,
+        responseHelper: ResponseHelper<List<Contributors>>
+    ): RepoDetailsRepository =
         RepoDetailsRepositoryImpl(context = context, api = api, responseHelper = responseHelper)
 }
