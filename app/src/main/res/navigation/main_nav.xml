@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/reposFragment">
+
+    <fragment
+        android:id="@+id/reposFragment"
+        android:name="com.khairo.dotassignment.ui.repos.ReposFragment"
+        android:label="repos_fragment"
+        tools:layout="@layout/repos_fragment">
+
+        <action
+            android:id="@+id/action_reposFragment_to_reposDetailsFragment"
+            app:destination="@id/reposDetailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reposDetailsFragment"
+        android:name="com.khairo.dotassignment.ui.repoDetails.ReposDetailsFragment"
+        android:label="repos_details_fragment"
+        tools:layout="@layout/repos_details_fragment">
+
+        <argument
+            android:name="repo"
+            app:argType="com.khairo.dotassignment.data.models.repo.Repo" />
+    </fragment>
+
+</navigation>

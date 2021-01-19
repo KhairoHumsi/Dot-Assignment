@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dot Assignment</string>
+
+    <string name="forks">Forks</string>
+    <string name="watchers">Watchers</string>
+
+    <!--Toasts-->
+    <string name="toast_internet_error">Please check your internet!!</string>
+    <string name="toast_server_error">Server error!!</string>
+    <string name="toast_something_error">Something went wrong!!</string>
+</resources>
